@@ -186,12 +186,12 @@ export default function AboutPage() {
         <section className="bg-sage py-20 lg:py-28">
           <div className="max-w-6xl mx-auto px-6">
             <div className="flex flex-col md:flex-row gap-10 lg:gap-16 items-center">
-              <div className="relative w-48 h-48 lg:w-64 lg:h-64 flex-shrink-0">
+              <div className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-lg w-full md:w-60 flex-shrink-0">
                 <Image
                   src="/vladana-3.jpg"
                   alt="Vladana Stanković"
                   fill
-                  className="object-cover rounded-full"
+                  className="object-cover object-top"
                 />
               </div>
               <div className="flex-1">
