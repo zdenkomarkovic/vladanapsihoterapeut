@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(node --version:*)",
+      "Bash(npm:*)",
+      "Skill(update-config)",
+      "Bash(python3 -c ' *)",
+      "Bash(node -e ' *)",
+      "Bash(mv \"2P3A5793\\(2\\) \\(1\\).JPG\" \"vladana-1.jpg\")",
+      "Bash(mv \"2P3A5898\\(4\\) \\(1\\).JPG\" \"vladana-2.jpg\")",
+      "Bash(mv \"unnamed\\(2\\) \\(1\\).jpg\" \"vladana-3.jpg\")"
+    ]
+  }
+}
