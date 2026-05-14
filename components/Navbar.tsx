@@ -87,7 +87,11 @@ export default function Navbar() {
                 stroke="currentColor"
                 strokeWidth={2}
               >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
               </svg>
             </button>
 
@@ -114,18 +118,9 @@ export default function Navbar() {
           <li>
             <Link
               href="/#kontakt"
-              className="font-sans text-sm text-muted hover:text-sage transition-colors tracking-wide"
-            >
-              Kontakt
-            </Link>
-          </li>
-
-          <li>
-            <Link
-              href="/#kontakt"
               className="font-sans text-sm bg-sage text-white px-6 py-2.5 rounded-full hover:bg-sage-dark transition-colors"
             >
-              Zakaži sesiju
+              Kontakt
             </Link>
           </li>
         </ul>
@@ -136,9 +131,15 @@ export default function Navbar() {
           aria-label="Otvori meni"
           className="md:hidden flex flex-col gap-1.5 p-1"
         >
-          <span className={`block w-6 h-0.5 bg-charcoal transition-transform duration-200 ${open ? "translate-y-2 rotate-45" : ""}`} />
-          <span className={`block w-6 h-0.5 bg-charcoal transition-opacity duration-200 ${open ? "opacity-0" : ""}`} />
-          <span className={`block w-6 h-0.5 bg-charcoal transition-transform duration-200 ${open ? "-translate-y-2 -rotate-45" : ""}`} />
+          <span
+            className={`block w-6 h-0.5 bg-charcoal transition-transform duration-200 ${open ? "translate-y-2 rotate-45" : ""}`}
+          />
+          <span
+            className={`block w-6 h-0.5 bg-charcoal transition-opacity duration-200 ${open ? "opacity-0" : ""}`}
+          />
+          <span
+            className={`block w-6 h-0.5 bg-charcoal transition-transform duration-200 ${open ? "-translate-y-2 -rotate-45" : ""}`}
+          />
         </button>
       </nav>
 
@@ -166,7 +167,11 @@ export default function Navbar() {
                 stroke="currentColor"
                 strokeWidth={2}
               >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
               </svg>
             </button>
 
@@ -176,7 +181,10 @@ export default function Navbar() {
                   <Link
                     key={s.href}
                     href={s.href}
-                    onClick={() => { setOpen(false); setMobileServicesOpen(false); }}
+                    onClick={() => {
+                      setOpen(false);
+                      setMobileServicesOpen(false);
+                    }}
                     className={`font-sans text-sm py-2 transition-colors ${
                       pathname === s.href ? "text-sage" : "text-muted hover:text-sage"
                     }`}
