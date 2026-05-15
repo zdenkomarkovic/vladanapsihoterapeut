@@ -4,7 +4,7 @@ const credentials = [
   { year: "2016", text: "Diplomirala psihologiju, Filozofski fakultet, Niš" },
   { year: "2016", text: "Instruktor asertivne komunikacije (SRABCT)" },
   { year: "2025", text: "Masterirala psihologiju, Filozofski fakultet, Niš" },
-  { year: "Sada", text: "KBT psihoterapeut pod supervizijom u okviru SRABCT-a" },
+  { year: "2022", text: "KBT psihoterapeut pod supervizijom u okviru SRABCT-a" },
 ];
 
 export default function About() {
@@ -20,8 +20,8 @@ export default function About() {
 
         <p className="font-sans text-muted leading-relaxed text-center max-w-2xl mx-auto mb-14">
           U radu mi je važno da osoba dobije prostor da razume sebe, svoje emocije, obrasce
-          ponašanja i načine na koje se nosi sa stresom, odnosima i životnim promenama. Verujem
-          u postepen proces rada, individualni pristup i saradnički odnos u terapiji.
+          ponašanja i načine na koje se nosi sa stresom, odnosima i životnim promenama. Verujem u
+          postepen proces rada, individualni pristup i saradnički odnos u terapiji.
         </p>
 
         {/* Obrazovanje i zvanja */}

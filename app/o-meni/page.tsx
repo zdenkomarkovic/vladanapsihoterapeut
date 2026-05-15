@@ -27,7 +27,7 @@ const credentials = [
     detail: "Filozofski fakultet, Niš",
   },
   {
-    year: "Sada",
+    year: "2022",
     title: "KBT psihoterapeut pod supervizijom",
     detail: "U okviru SRABCT-a",
   },

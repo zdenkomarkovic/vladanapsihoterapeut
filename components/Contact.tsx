@@ -57,15 +57,12 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 gap-14 lg:gap-24 items-start">
           {/* Leva strana - tekst */}
           <div>
-            <p className="font-sans text-sage text-xs uppercase tracking-[0.2em] mb-4">Kontakt</p>
-            <h2 className="font-serif text-4xl lg:text-5xl text-charcoal mb-6 leading-tight">
+            <p className="font-sans text-sage text-xs uppercase tracking-[0.2em] mb-4 md:mb-10">
+              Kontakt
+            </p>
+            <h2 className="font-serif text-4xl lg:text-5xl text-charcoal mb-6 md:mb-16 leading-tight">
               Napravite prvi korak
             </h2>
-            <p className="font-sans text-muted leading-relaxed mb-10">
-              Pošaljite upit sa vašim imenom i prezimenom, mejlom, brojem telefona i okvirnim
-              terminima koji vam odgovaraju. Nakon upita stiže vam odgovor sa dostupnim terminima i
-              daljim informacijama.
-            </p>
 
             <div className="space-y-6">
               {/* Email */}
