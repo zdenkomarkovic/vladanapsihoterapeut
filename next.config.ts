@@ -7,17 +7,6 @@ const nextConfig: NextConfig = {
     remotePatterns: [],
   },
 
-  async redirects() {
-    return [
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: "www.psihoterapijavladana.rs" }],
-        destination: "https://psihoterapijavladana.rs/:path*",
-        permanent: true,
-      },
-    ];
-  },
-
   async headers() {
     return [
       {
