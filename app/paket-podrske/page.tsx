@@ -3,11 +3,16 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { SITE_URL, SITE_EMAIL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Paket podrške | Vladana Stanković",
+  title: "Paket podrške",
   description:
     "Paket namenjen mamama i trudnicama — 4 individualne online sesije mesečno uz mogućnost kraćih konsultacija. Kontinuitet i podrška tokom prilagođavanja novoj životnoj ulozi.",
+  alternates: {
+    canonical: `${SITE_URL}/paket-podrske`,
+  },
 };
 
 const EMAIL = "psihoterapijavladana@gmail.com";
@@ -44,9 +49,31 @@ const forWhom = [
   "Svaka mama kojoj je potreban kontinuiran prostor za sebe",
 ];
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Paket podrške za mame i trudnice",
+  description:
+    "4 individualne online KBT psihoterapijske seanse mesečno za mame i trudnice, uz mogućnost kraćih konsultacija između seansi.",
+  url: `${SITE_URL}/paket-podrske`,
+  provider: {
+    "@type": "Person",
+    name: "Vladana Stanković",
+    email: SITE_EMAIL,
+  },
+  serviceType: "Psihoterapija — mesečni paket",
+  audience: { "@type": "Audience", audienceType: "Mame i trudnice" },
+  availableChannel: {
+    "@type": "ServiceChannel",
+    serviceType: "Online video poziv",
+    availableLanguage: "Serbian",
+  },
+};
+
 export default function PaketPodrskePage() {
   return (
     <>
+      <JsonLd data={serviceSchema} />
       <Navbar />
       <main>
         {/* Hero */}

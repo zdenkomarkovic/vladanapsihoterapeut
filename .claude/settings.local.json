@@ -11,7 +11,8 @@
       "Bash(mv \"2P3A5898\\(4\\) \\(1\\).JPG\" \"vladana-2.jpg\")",
       "Bash(mv \"unnamed\\(2\\) \\(1\\).jpg\" \"vladana-3.jpg\")",
       "PowerShell(Get-ChildItem \"E:\\\\Sajtovi\\\\vladanapsihoterapeut\" | Where-Object { $_.Name -ne \"node_modules\" } | Select-Object Name, PSIsContainer)",
-      "PowerShell(Get-ChildItem \"E:\\\\Sajtovi\\\\vladanapsihoterapeut\\\\app\" -Recurse -Force | Select-Object -ExpandProperty FullName | Where-Object { $_ -notmatch \"node_modules\" })"
+      "PowerShell(Get-ChildItem \"E:\\\\Sajtovi\\\\vladanapsihoterapeut\\\\app\" -Recurse -Force | Select-Object -ExpandProperty FullName | Where-Object { $_ -notmatch \"node_modules\" })",
+      "Bash(npx tsc *)"
     ]
   }
 }

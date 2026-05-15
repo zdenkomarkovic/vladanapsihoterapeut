@@ -3,11 +3,16 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { SITE_URL, SITE_EMAIL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Individualne seanse | Vladana Stanković",
+  title: "Individualne seanse",
   description:
-    "Online individualne psihoterapijske seanse za odrasle. Trajanje 50 minuta. Radim sa anksioznošću, depresijom, strahovima, PTSP-om, stresnom i teškoćama u odnosima.",
+    "Online individualne psihoterapijske seanse za odrasle. Trajanje 50 minuta. Radim sa anksioznošću, depresijom, strahovima, PTSP-om, stresom i teškoćama u odnosima.",
+  alternates: {
+    canonical: `${SITE_URL}/individualne-seanse`,
+  },
 };
 
 const EMAIL = "psihoterapijavladana@gmail.com";
@@ -55,9 +60,31 @@ const steps = [
   },
 ];
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Individualne psihoterapijske seanse",
+  description:
+    "Online individualne KBT psihoterapijske seanse za odrasle. Trajanje 50 minuta. Rad sa anksioznošću, depresijom, paničnim napadima, PTSP-om, stresom i teškoćama u odnosima.",
+  url: `${SITE_URL}/individualne-seanse`,
+  provider: {
+    "@type": "Person",
+    name: "Vladana Stanković",
+    email: SITE_EMAIL,
+  },
+  serviceType: "Psihoterapija",
+  audience: { "@type": "Audience", audienceType: "Odrasli" },
+  availableChannel: {
+    "@type": "ServiceChannel",
+    serviceType: "Online video poziv",
+    availableLanguage: "Serbian",
+  },
+};
+
 export default function IndividualneSeansePage() {
   return (
     <>
+      <JsonLd data={serviceSchema} />
       <Navbar />
       <main>
         {/* Hero */}

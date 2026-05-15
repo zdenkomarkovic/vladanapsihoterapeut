@@ -3,11 +3,16 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "O meni | Vladana Stanković",
+  title: "O meni",
   description:
     "Upoznajte Vladanu Stanković — KBT psihoterapeuta pod supervizijom. Diplomirana psiholog, instruktor asertivne komunikacije, sa fokusom na razumevanje sebe i životnih promena.",
+  alternates: {
+    canonical: `${SITE_URL}/o-meni`,
+  },
 };
 
 const credentials = [
@@ -52,9 +57,29 @@ const values = [
   },
 ];
 
+const profileSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  mainEntity: {
+    "@type": "Person",
+    name: "Vladana Stanković",
+    jobTitle: "KBT Psihoterapeut pod supervizijom",
+    description:
+      "Diplomirala psihologiju 2016. i masterirala 2025. na Filozofskom fakultetu u Nišu. KBT psihoterapeut pod supervizijom u okviru SRABCT-a.",
+    url: `${SITE_URL}/o-meni`,
+    hasCredential: [
+      { "@type": "EducationalOccupationalCredential", name: "Diploma iz psihologije — Filozofski fakultet Niš (2016)" },
+      { "@type": "EducationalOccupationalCredential", name: "Instruktor asertivne komunikacije — SRABCT (2016)" },
+      { "@type": "EducationalOccupationalCredential", name: "KBT psihoterapeut pod supervizijom — SRABCT (2022)" },
+      { "@type": "EducationalOccupationalCredential", name: "Master iz psihologije — Filozofski fakultet Niš (2025)" },
+    ],
+  },
+};
+
 export default function AboutPage() {
   return (
     <>
+      <JsonLd data={profileSchema} />
       <Navbar />
       <main>
         {/* Hero */}

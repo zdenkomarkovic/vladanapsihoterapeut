@@ -3,11 +3,16 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { SITE_URL, SITE_EMAIL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Zajednica mama | Vladana Stanković",
+  title: "Zajednica mama",
   description:
     "Stručno vođena mala grupa namenjena mamama i trudnicama. Susreti tri puta mesečno u trajanju od 90 minuta — prostor za podršku, razmenu iskustava i razgovor bez osude.",
+  alternates: {
+    canonical: `${SITE_URL}/zajednica-mama`,
+  },
 };
 
 const EMAIL = "psihoterapijavladana@gmail.com";
@@ -47,9 +52,31 @@ const whyGroup = [
   },
 ];
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Zajednica mama",
+  description:
+    "Stručno vođena mala online grupa za mame i trudnice. Susreti tri puta mesečno, 90 minuta. Teme: majčinstvo, emocionalno opterećenje, odnosi, identitet.",
+  url: `${SITE_URL}/zajednica-mama`,
+  provider: {
+    "@type": "Person",
+    name: "Vladana Stanković",
+    email: SITE_EMAIL,
+  },
+  serviceType: "Grupna podrška",
+  audience: { "@type": "Audience", audienceType: "Mame i trudnice" },
+  availableChannel: {
+    "@type": "ServiceChannel",
+    serviceType: "Online mala grupa",
+    availableLanguage: "Serbian",
+  },
+};
+
 export default function ZajednicaMamaPage() {
   return (
     <>
+      <JsonLd data={serviceSchema} />
       <Navbar />
       <main>
         {/* Hero */}

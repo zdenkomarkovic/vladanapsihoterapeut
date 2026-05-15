@@ -3,11 +3,16 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { SITE_URL, SITE_EMAIL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Radionice asertivne komunikacije | Vladana Stanković",
+  title: "Radionice asertivne komunikacije",
   description:
     "Radionice asertivne komunikacije — grupno ili individualno. Naučite da postavljate granice, izražavate potrebe i razvijete samopouzdaniju komunikaciju u svakodnevnom životu.",
+  alternates: {
+    canonical: `${SITE_URL}/radionice`,
+  },
 };
 
 const EMAIL = "psihoterapijavladana@gmail.com";
@@ -57,9 +62,30 @@ const formats = [
   },
 ];
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Radionice asertivne komunikacije",
+  description:
+    "Grupne i individualne radionice za razvoj veština asertivne komunikacije — postavljanje granica, izražavanje potreba i zdraviji načini reagovanja u svakodnevnim odnosima.",
+  url: `${SITE_URL}/radionice`,
+  provider: {
+    "@type": "Person",
+    name: "Vladana Stanković",
+    email: SITE_EMAIL,
+  },
+  serviceType: "Edukativna radionica",
+  availableChannel: {
+    "@type": "ServiceChannel",
+    serviceType: "Grupno ili individualno",
+    availableLanguage: "Serbian",
+  },
+};
+
 export default function RadionicePage() {
   return (
     <>
+      <JsonLd data={serviceSchema} />
       <Navbar />
       <main>
         {/* Hero */}
