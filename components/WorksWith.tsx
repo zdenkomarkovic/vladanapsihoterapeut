@@ -27,7 +27,7 @@ export default function WorksWith() {
               Oblasti rada
             </p>
             <h2 className="font-serif text-4xl lg:text-5xl text-charcoal leading-tight mb-6">
-              Sa čime radim
+              Oblasti psihoterapijskog rada
             </h2>
             <p className="font-sans text-muted leading-relaxed mb-8">
               Ako se prepoznajete u nekim od ovih tema — bilo da se radi o dugotrajnoj

@@ -30,7 +30,7 @@ export default function HowItWorks() {
             Proces
           </p>
           <h2 className="font-serif text-4xl lg:text-5xl text-charcoal">
-            Kako funkcioniše
+            Kako funkcioniše online psihoterapija
           </h2>
         </div>
 

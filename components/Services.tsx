@@ -55,7 +55,7 @@ export default function Services() {
           <p className="font-sans text-sage text-xs uppercase tracking-[0.2em] mb-4">
             Načini rada
           </p>
-          <h2 className="font-serif text-4xl lg:text-5xl text-charcoal">Usluge</h2>
+          <h2 className="font-serif text-4xl lg:text-5xl text-charcoal">Online psihoterapija i programi podrške</h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">

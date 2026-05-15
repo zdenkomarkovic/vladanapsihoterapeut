@@ -104,7 +104,7 @@ export default function IndividualneSeansePage() {
               Usluga
             </p>
             <h1 className="font-serif text-5xl lg:text-6xl text-charcoal leading-tight mb-6">
-              Individualne seanse
+              Individualne psihoterapijske seanse
             </h1>
             <p className="font-sans text-muted text-lg leading-relaxed max-w-2xl mb-10">
               Online individualne psihoterapijske seanse za odrasle, zasnovane na
@@ -150,7 +150,7 @@ export default function IndividualneSeansePage() {
               <div>
                 <p className="font-sans text-sage text-xs uppercase tracking-[0.2em] mb-4">Pristup</p>
                 <h2 className="font-serif text-3xl lg:text-4xl text-charcoal mb-6 leading-tight">
-                  Kako izgleda rad
+                  Kako izgleda psihoterapijski rad
                 </h2>
                 <div className="space-y-4 font-sans text-muted leading-relaxed text-sm">
                   <p>

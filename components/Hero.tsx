@@ -6,15 +6,18 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-6 py-12 md:py-20 grid md:grid-cols-2 gap-10 lg:gap-20 items-center">
         {/* Tekst */}
         <div>
-          <p className="font-sans text-sage text-xs uppercase tracking-[0.2em] mb-4">
-            KBT Psihoterapeut · Online sesije
-          </p>
           <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-charcoal leading-[1.1] mb-5">
+            <span className="block font-sans text-sage text-xs uppercase tracking-[0.2em] mb-3">
+              KBT Psihoterapeut · Vladana Stanković
+            </span>
+            <span className="block font-sans text-sage text-xs uppercase tracking-[0.2em] mb-4">
+              Online psihoterapija
+            </span>
             Prostor za razumevanje sebe, emocija i odnosa
           </h1>
           <p className="font-sans text-muted text-base md:text-lg leading-relaxed mb-8 max-w-md">
-            Zajedno istražujemo misli, emocije i obrasce ponašanja koji oblikuju
-            vaš svakodnevni život — korak po korak, u vašem ritmu.
+            Zajedno istražujemo misli, emocije i obrasce ponašanja koji oblikuju vaš svakodnevni
+            život — korak po korak, u vašem ritmu.
           </p>
           <div className="flex flex-wrap gap-4">
             <a

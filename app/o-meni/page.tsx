@@ -94,9 +94,9 @@ export default function AboutPage() {
                 <h1 className="font-serif text-5xl lg:text-6xl text-charcoal leading-tight mb-6">
                   Vladana Stanković
                 </h1>
-                <p className="font-sans text-copper text-sm tracking-wide mb-8">
+                <h2 className="font-sans text-copper text-sm tracking-wide mb-8">
                   KBT psihoterapeut pod supervizijom · SRABCT
-                </p>
+                </h2>
                 <p className="font-sans text-muted text-lg leading-relaxed">
                   Diplomirala psihologiju 2016. i masterirala 2025. godine na Filozofskom fakultetu
                   u Nišu. Od početka karijere radi na tome da svaka osoba dobije prostor da razume
@@ -125,7 +125,7 @@ export default function AboutPage() {
         <section className="bg-cream-dark py-20 lg:py-28">
           <div className="max-w-3xl mx-auto px-6">
             <p className="font-sans text-sage text-xs uppercase tracking-[0.2em] mb-4">Pristup</p>
-            <h2 className="font-serif text-4xl text-charcoal mb-10">Kako radim</h2>
+            <h2 className="font-serif text-4xl text-charcoal mb-10">Moj pristup psihoterapijskom radu</h2>
 
             <div className="space-y-6 font-sans text-muted leading-relaxed">
               <p>
