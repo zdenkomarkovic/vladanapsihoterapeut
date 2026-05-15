@@ -7,9 +7,9 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL, SITE_EMAIL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Paket podrške",
+  title: "Paket podrške za mame i trudnice",
   description:
-    "Paket namenjen mamama i trudnicama — 4 individualne online sesije mesečno uz mogućnost kraćih konsultacija. Kontinuitet i podrška tokom prilagođavanja novoj životnoj ulozi.",
+    "Mesečni psihoterapijski paket za mame i trudnice — 4 individualne online seanse mesečno uz konsultacije između seansi. Kontinuitet i psihološka podrška tokom majčinstva.",
   alternates: {
     canonical: `${SITE_URL}/paket-podrske`,
   },

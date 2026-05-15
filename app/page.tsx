@@ -13,7 +13,7 @@ import Line from "@/components/Line";
 import { SITE_URL, SITE_DESCRIPTION } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Vladana Stanković | KBT Psihoterapeut",
+  title: { absolute: "Vladana Stanković | KBT Psihoterapeut" },
   description: SITE_DESCRIPTION,
   alternates: {
     canonical: SITE_URL,

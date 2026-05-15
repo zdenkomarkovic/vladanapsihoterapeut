@@ -7,9 +7,9 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL, SITE_EMAIL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Individualne seanse",
+  title: "Online psihoterapija — individualne seanse",
   description:
-    "Online individualne psihoterapijske seanse za odrasle. Trajanje 50 minuta. Radim sa anksioznošću, depresijom, strahovima, PTSP-om, stresom i teškoćama u odnosima.",
+    "Online individualne KBT psihoterapijske seanse za odrasle, trajanje 50 minuta. Radim sa anksioznošću, depresijom, paničnim napadima, PTSP-om, stresom i teškoćama u odnosima.",
   alternates: {
     canonical: `${SITE_URL}/individualne-seanse`,
   },

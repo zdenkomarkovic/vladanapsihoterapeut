@@ -64,9 +64,6 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
     images: [`${SITE_URL}/og-image.png`],
   },
-  alternates: {
-    canonical: SITE_URL,
-  },
   robots: {
     index: true,
     follow: true,
@@ -88,6 +85,10 @@ const personSchema = {
     "Diplomirana psiholog i KBT psihoterapeut pod supervizijom. Pruža online individualnu psihoterapiju, vodi grupu za mame i drži radionice asertivne komunikacije.",
   url: SITE_URL,
   email: SITE_EMAIL,
+  sameAs: [
+    "https://www.instagram.com/unutrasnjiglasmame",
+    "https://www.tiktok.com/@unutrasnji.glas.m6E",
+  ],
   knowsAbout: [
     "Kognitivno-bihejvioralna terapija",
     "Anksioznost",

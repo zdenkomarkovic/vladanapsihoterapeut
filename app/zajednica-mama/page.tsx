@@ -7,9 +7,9 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL, SITE_EMAIL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Zajednica mama",
+  title: "Zajednica mama — podrška za mame i trudnice",
   description:
-    "Stručno vođena mala grupa namenjena mamama i trudnicama. Susreti tri puta mesečno u trajanju od 90 minuta — prostor za podršku, razmenu iskustava i razgovor bez osude.",
+    "Stručno vođena online psihoterapijska grupa za mame i trudnice. Susreti 3× mesečno, 90 minuta — psihološka podrška, razmena iskustava i prostor bez osude.",
   alternates: {
     canonical: `${SITE_URL}/zajednica-mama`,
   },

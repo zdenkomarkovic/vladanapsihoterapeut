@@ -7,9 +7,9 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "O meni",
+  title: { absolute: "O meni — Vladana Stanković, KBT psihoterapeut" },
   description:
-    "Upoznajte Vladanu Stanković — KBT psihoterapeuta pod supervizijom. Diplomirana psiholog, instruktor asertivne komunikacije, sa fokusom na razumevanje sebe i životnih promena.",
+    "Vladana Stanković je KBT psihoterapeut pod supervizijom i diplomirana psiholog. Radi online psihoterapiju za odrasle — individualne seanse, grupni rad i radionice asertivne komunikacije.",
   alternates: {
     canonical: `${SITE_URL}/o-meni`,
   },

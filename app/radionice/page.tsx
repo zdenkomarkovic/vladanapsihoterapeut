@@ -9,7 +9,7 @@ import { SITE_URL, SITE_EMAIL } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Radionice asertivne komunikacije",
   description:
-    "Radionice asertivne komunikacije — grupno ili individualno. Naučite da postavljate granice, izražavate potrebe i razvijete samopouzdaniju komunikaciju u svakodnevnom životu.",
+    "Grupne i individualne radionice asertivne komunikacije — postavljanje granica, izražavanje potreba i samopouzdanija komunikacija u privatnom i poslovnom okruženju.",
   alternates: {
     canonical: `${SITE_URL}/radionice`,
   },
